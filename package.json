@@ -7,10 +7,16 @@
   "README": "See README",
   "dependencies": {
     "del": "^2.2.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
-    "run-sequence": "^1.2.1"
-  }
+    "run-sequence": "^1.2.1",
+    "snyk": "^1.104.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
